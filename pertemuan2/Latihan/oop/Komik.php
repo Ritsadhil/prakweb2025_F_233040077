@@ -16,4 +16,9 @@ class Komik extends Produk
         $infoParent = parent::getInfoProduk();
         return "Komik : " . $infoParent . " - {$this->jmlHalaman} Halaman.";
     }
+
+    public function getHarga()
+    {
+        return $this->harga;
+    }
 }

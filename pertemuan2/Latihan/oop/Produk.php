@@ -1,10 +1,10 @@
 <?php
 class Produk
 {
-    public $judul,
+    private $judul,
         $penulis,
-        $penerbit;
-    protected $harga;
+        $penerbit,
+        $harga;
 
     public function __construct($judul = "judul", $penulis = "penulis", $penerbit = "penerbit", $harga = 0)
     {
@@ -30,5 +30,29 @@ class Produk
     public function setHarga($hargaBaru)
     {
         $this->harga = $hargaBaru;
+    }
+    public function getJudul()
+    {
+        return $this->judul;
+    }
+    public function setJudul($judulBaru)
+    {
+        $this->judul = $judulBaru;
+    }
+    public function getPenulis()
+    {
+        return $this->penulis;
+    }
+    public function setPenulis($penulisBaru)
+    {
+        $this->penulis = $penulisBaru;
+    }
+    public function getPenerbit()
+    {
+        return $this->penerbit;
+    }
+    public function setPenerbit($penerbitBaru)
+    {
+        $this->penerbit = $penerbitBaru;
     }
 }

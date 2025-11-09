@@ -25,7 +25,7 @@ class Game extends Produk
 }
 
 // --- Objek ---
-$produk1 = new Komik("Naruto", "Masashi Kishimoto", "Shonen Jump", 30000, 100);
+$produk1->setjudul("Naruto");
 $produk2 = new Game("Uncharted", "Neil Druckmann", "Sony Computer", 250000, 50);
 
 echo $produk1->getInfoProduk();
